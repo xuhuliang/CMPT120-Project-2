@@ -22,7 +22,6 @@
       var s6=0;
       var currentLocation = 1;
        function btn_direction_click(direction) {
-
           if (direction === 1) {
              if (currentLocation == 4) {
                 currentLocation = 2;
@@ -123,37 +122,31 @@
     <br>
     <textarea class="style1" id="game" rows="16" cols="60">You are locked inside a room, and now you are standing at location 1. Your score starts at 5 because you are at location 1.
     </textarea>
-    <br>
-         
+    <br>    
     <input type="button" 
            value="North" 
            class="style2"
            id="north"
-           onclick="btn_direction_click(1);">
-                   
+           onclick="btn_direction_click(1);">              
     <input type="button" 
            value="West" 
            class="style2"
            id="west"
-           onclick="btn_direction_click(2);">
-           
+           onclick="btn_direction_click(2);">        
     <input type="button" 
            value="South" 
            class="style2"
            id="south"
-           onclick="btn_direction_click(3);">           
-            
+           onclick="btn_direction_click(3);">                      
     <input type="button" 
            value="East" 
            class="style2"
            id="east"
-           onclick="btn_direction_click(4);">
-           
+           onclick="btn_direction_click(4);">          
     <input type="button" 
            value="score" 
            class="style3"
            onclick="btn_score_click();">
-
     <input type="button" 
            value="map" 
            class="style3"
@@ -168,7 +161,6 @@
            class="style2"
            onclick="btn_go_click();">
     <br>
-
     <p>
      <a href="mailto:Tony.liang712@gmail.com">If you get stuck during the game, please click here to report the error.</a>
     </p>
