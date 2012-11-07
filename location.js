@@ -4,7 +4,7 @@ var playerHasRedKey = false;
 var bluekey = "";   // for inventory use
 var redkey = "";    // for inventory use
 function location1() {
-  updateDisplay("It seems like my starting position, hmm...");
+  updateDisplay("It seems like your starting position, hmm...");
 }
 function location2() {
   updateDisplay("You are now standing in the corner. There is a sentence written on the floor:[This is not an easy game, my boy.]");
