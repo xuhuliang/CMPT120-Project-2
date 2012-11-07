@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Huliang Xu
+     Introduction to Programming
+     Project 4 - Text Adventure Game
+     6 Nov. 2012 -->
+  <head>
+    <title>Get out of the maze!</title>
+    <link rel="stylesheet" href="style.css" media="screen"/>
+    <script type="text/JavaScript" src="location.js"></script>
+    <script type="text/javascript" src="move.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+    <script type="text/javascript" src="buttonstatus.js"></script>
+  </head>
+  <body onload="init()"><img src="map.gif" alt="map">
+    <br>
+    <textarea class="style1" id="game" rows="16" cols="60">
+    </textarea>
+    <br>     
+    <input type="button" 
+           value="North" 
+           class="style2"
+           id="north"
+           onclick="btn_direction_click(1);">                  
+    <input type="button" 
+           value="West" 
+           class="style2"
+           id="west"
+           onclick="btn_direction_click(2);">          
+    <input type="button" 
+           value="South" 
+           class="style2"
+           id="south"
+           onclick="btn_direction_click(3);">                      
+    <input type="button" 
+           value="East" 
+           class="style2"
+           id="east"
+           onclick="btn_direction_click(4);">          
+    <input type="button" 
+           value="score" 
+           class="style3"
+           onclick="btn_score_click();">
+    <input type="button" 
+           value="inventory" 
+           class="style3"
+           onclick="btn_inventory_click();">
+    <br>
+    <a class= "white">Enter command:</a>
+    <input type="text" id="txtInput">
+    <input type="button" 
+           value="Go"
+           class="style2"
+           onclick="btn_go_click();">
+    <br>
+    <p>
+     <a href="mailto:Tony.liang712@gmail.com">If you get stuck during the game, please click here to report the error.</a>
+    </p>
+  </body>
+</html>
