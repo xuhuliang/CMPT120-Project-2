@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Huliang Xu
+     Introduction to Programming
+     Final Project - Text Adventure Game
+     10 Dec. 2012 -->
+  <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+      <meta name="author"             content="Huliang Xu" />
+      <title>Get out of the maze!</title>
+      <script type="text/Javascript" src="game.js"></script>   
+  </head>
+  
+  <body onload="btn_navigation(0);">
+  
+      <br>
+          <textarea class="style1" id="taGame" rows="16" cols="60">
+          </textarea>
+      <br>
+      
+      <input type="text" id="txtInput">
+      
+      <input type="button"
+             value="Go"
+             onclick="btn_go_click();">
+             
+      <input type="button"
+             value="North"
+             onclick="btn_navigation(0); scoreCounter();"
+             id="north">
+ 
+      <input type="button"
+             value="South"
+             onclick="btn_navigation(1); scoreCounter();"
+             id="south">
+             
+      <input type="button"
+             value="East"
+             onclick="btn_navigation(2); scoreCounter();"
+             id="east">
+             
+      <input type="button"
+             value="West"
+             onclick="btn_navigation(3); scoreCounter();"
+             id="west">
+             
+      <input type="button"
+             value="Score"
+             onclick="Score();">
+             
+      <input type="button"
+             value="Take"
+             onclick="inventory();">
+      
+      <input type="button"
+             value="Get out of the maze!"
+             onclick="win();">
+             
+      <input type="button"
+             value="Inventory"
+             onclick="btn_inventory_click();"> 
+     
+             
+      <p>
+          <a href="mailto:Tony.liang712@gmail.com">If you get stuck during the game, please click here to report the error.</a>
+      </p>
+      
+     <img src="gamemap.png" alt="gamemap"/>
+ 
+  </body>
+</html>
